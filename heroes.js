@@ -1,6 +1,7 @@
 const axios = require('axios');
 const { superheroes, charactersAPIURL, marvelAPIKey } = require('./constants');
 const { updateHero, getHerosCreatorsDB, getHerosCharactersDB } = require('./db');
+const { getTimeNowString } = require('./utils');
 
 const apikey = marvelAPIKey;
 
@@ -93,11 +94,13 @@ const synchonizeHero = async (hero) => {
 
 	// upload to database
 	let heroObj = {
+		last_sync: getTimeNowString(),
 		characters,
 		editors: Array.from(editors),
 		writers: Array.from(writers),
 		colorists: Array.from(colorists),
-		marvelID: heroId
+		marvelID: heroId,
+		name: heroName
 	};
 
 	updateHero(heroObj);
