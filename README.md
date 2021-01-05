@@ -1,6 +1,4 @@
 # albo-test
-This repo is a test app developed my me as an exercise to measure my skills for albo.
-
 The app itself is useful to get information from the Marvel API and help the people at Albo know about the people that contributed to a character (like Iron Man or Captain America!).
 
 ### Instructions:
