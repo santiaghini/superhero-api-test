@@ -1,4 +1,4 @@
-# albo-test
+# Superhero API
 The app itself is useful to get information from the Marvel API and help the people at Albo know about the people that contributed to a character (like Iron Man or Captain America!).
 
 ### Instructions:
